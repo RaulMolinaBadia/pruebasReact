@@ -7,18 +7,6 @@ import React, { useState } from 'react'
 export const AdderRemover = ({ name, parameters }) => {
   console.log(parameters)
   const [ComponentsListState, setComponentsListState] = useState([])
-  // let a = ComponentsHelper(name, {
-  //   iata: 'hola',
-  //   city: 'fsdfd',
-  //   country: 'dsfsdfsd',
-  //   airports: 'fsdfsdf'
-  // })
-  // let b = ComponentsHelper(name, {
-  //   iata: 'adios',
-  //   city: 'fsdfd',
-  //   country: 'dsfsdfsd',
-  //   airports: 'fsdfsdf'
-  // })
 
   const addComponent = e => {
     // console.log(a)

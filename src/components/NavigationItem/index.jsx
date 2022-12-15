@@ -10,7 +10,6 @@ const NavigationItem = ({ id = 0, name = 'John Doe', isSelected = false, onChang
     isSelected: 'isSelected',
     onChange: 'onChange'
   }
-  // Function that changes the class of the clicked <NavItem /> to selected
   const select = (e) => {
     if (onChange !== null) {
       onChange(id)
@@ -19,7 +18,6 @@ const NavigationItem = ({ id = 0, name = 'John Doe', isSelected = false, onChang
   }
   // Returns the component
   return (
-    
     <div className='a'>
       {isSelected === true
         ? <ContainerNavitem><IsSelected>{name}</IsSelected></ContainerNavitem>

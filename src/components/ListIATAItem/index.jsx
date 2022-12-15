@@ -9,13 +9,13 @@ import {
 import { AdderRemover } from '../AdderRemover/index'
 
 const ListIATAItem = ({ iata, city, country, airports, icon = null }) => {
+  let iconAlt
   let props = {
     iata: 'iata',
     city: 'city',
     country: 'country',
     airports: 'airports'
   }
-  let iconAlt
   if (icon === 'airport') {
     iconAlt = 'airport'
     icon = process.env.PUBLIC_URL + '/images/TravelportPlane.png'
