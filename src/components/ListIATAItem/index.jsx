@@ -9,6 +9,12 @@ import {
 import { AdderRemover } from '../AdderRemover/index'
 
 const ListIATAItem = ({ iata, city, country, airports, icon = null }) => {
+  let props = {
+    iata: 'iata',
+    city: 'city',
+    country: 'country',
+    airports: 'airports'
+  }
   let iconAlt
   if (icon === 'airport') {
     iconAlt = 'airport'
@@ -43,7 +49,9 @@ const ListIATAItem = ({ iata, city, country, airports, icon = null }) => {
           {airports}
         </Airports>
       </ListIATAItemContainer>
-      <AdderRemover name={'ListIATAItem'} parameters='a' />
+      {/* parameters le tengo que pasar un json ya montado con las props */}
+      <AdderRemover name={'listIataItem'} parameters={props} />
+      
     </div>
   )
 }

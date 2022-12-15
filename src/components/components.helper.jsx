@@ -22,7 +22,7 @@ export default (componentName, props, children = undefined) => {
         Components[componentName],
         {
           key: uuidv4(),
-          ...propsº
+          ...props
         },
         children
       )
