@@ -5,15 +5,12 @@ import React, { useState } from 'react'
 // import { Prueba } from '../Prueba/index'
 
 export const AdderRemover = ({ name, parameters }) => {
-  console.log(parameters)
+  // El componente no puede estar dentro de un componente extenrno y cada vez del + tengo que crear el componente y luego por separado al lado los botones que me hagan falta
   const [ComponentsListState, setComponentsListState] = useState([])
 
   const addComponent = e => {
-    // console.log(a)
-    setComponentsListState([
-      ...ComponentsListState,
-      ComponentsHelper(name, parameters )
-    ])
+  }
+  const removeComponent = e => {
   }
   return (
     <>
@@ -23,6 +20,13 @@ export const AdderRemover = ({ name, parameters }) => {
         }}
       >
         +
+      </button>
+      <button
+        onClick={e => {
+          removeComponent(e)
+        }}
+      >
+        -
       </button>
       {ComponentsListState}
     </>

@@ -7,7 +7,7 @@ export const Prueba = (props) => {
   return (
     <div className='a'>
         {props.text}
-        <AdderRemover />
+        {/* <AdderRemover /> */}
     </div>
   )
 }

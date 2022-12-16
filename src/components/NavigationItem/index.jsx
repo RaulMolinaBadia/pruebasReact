@@ -22,7 +22,7 @@ const NavigationItem = ({ id = 0, name = 'John Doe', isSelected = false, onChang
       {isSelected === true
         ? <ContainerNavitem><IsSelected>{name}</IsSelected></ContainerNavitem>
         : <ContainerNavitem><IsNotSelected onClick={event => { select(event) }}>{name}</IsNotSelected></ContainerNavitem>}
-      <AdderRemover name={'navigationItem'} parameters={props} />
+      {/* <AdderRemover name={'navigationItem'} parameters={props} /> */}
     </div>
   )
 }
