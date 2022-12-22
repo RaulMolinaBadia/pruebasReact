@@ -6,18 +6,9 @@ import {
   Country,
   Airports
 } from './styles'
-import { AdderRemover } from '../AdderRemover/index'
 
 const ListIATAItem = ({ iata, city, country, airports, icon = null }) => {
   let iconAlt
-  let key = 0;
-  let props = {
-    key: key++,
-    iata: 'iata',
-    city: 'city',
-    country: 'country',
-    airports: 'airports'
-  }
   if (icon === 'airport') {
     iconAlt = 'airport'
     icon = process.env.PUBLIC_URL + '/images/TravelportPlane.png'
@@ -52,8 +43,7 @@ const ListIATAItem = ({ iata, city, country, airports, icon = null }) => {
         </Airports>
       </ListIATAItemContainer>
       {/* parameters le tengo que pasar un json ya montado con las props */}
-      {/* <AdderRemover name={'listIataItem'} parameters={props} /> */}
-      
+
     </div>
   )
 }

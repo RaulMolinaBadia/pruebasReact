@@ -1,8 +1,8 @@
 import React from 'react'
 import { v4 as uuidv4 } from 'uuid'
-import ListIataItem  from './ListIATAItem/index'
+import ListIataItem from './ListIATAItem/index'
 import NavigationItem from './NavigationItem/index'
-import {Prueba} from './Prueba/index'
+import { Prueba } from './Prueba/index'
 
 const Components = {
   listIataItem: ListIataItem,
