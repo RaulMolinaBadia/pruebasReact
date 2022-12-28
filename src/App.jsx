@@ -7,21 +7,21 @@ import NavigationItem from './components/NavigationItem'
 export const App = props => {
   const PropsComponents = {
     listIataItem: {
-      key: 0,
+      // key: ,
       iata: 'iata',
       city: 'city',
       country: 'country',
       airports: 'airports'
     },
     navigationItem: {
-      key: 0,
+      // key: undefined,
       id: '0',
       name: 'name',
       isSelected: 'isSelected',
       onChange: 'onChange'
     },
     prueba: {
-      key: 0,
+      // key: undefined,
       text: 'prueba'
     }
   }
