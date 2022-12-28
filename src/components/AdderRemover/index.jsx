@@ -29,17 +29,9 @@ export const AdderRemover = ({ name, parameters, numberCopies = 1 }) => {
     </>
   )
   const addComponent = e => {
-    // setComponentsListState([
-    //   ...ComponentsListState,
-    //   ComponentsListState[ComponentsListState.length] = newComponent,
-    //   ComponentsListState[ComponentsListState.length] = newAdderRemover
-    // ])
     containerComponents.push({...newComponent, key: key++})
     containerAdderRemover.push(newAdderRemover)
     setComponentsListState([containerComponents,containerAdderRemover])
-    ComponentsListState.forEach((component,i) =>{
-
-    })
   }
   console.log(ComponentsListState)
   const removeComponent = e => {
