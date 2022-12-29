@@ -4,11 +4,11 @@ import React, { useState } from 'react'
 
 export const AdderRemover = ({ name, parameters}) => {
   // El componente no puede estar dentro de un componente extenrno y cada vez del + tengo que crear el componente y luego por separado al lado los botones que me hagan falta
-  const containerAdderRemover = []
-  const containerComponents = []
+  // const containerAdderRemover = []
+  let containerComponents = []
   const [ComponentsListState, setComponentsListState] = useState([
-    containerComponents,
-    containerAdderRemover
+    containerComponents
+    // containerAdderRemover
   ])
   const newComponent = CreatorComponents(name, parameters)
   let key = 0
@@ -30,11 +30,12 @@ export const AdderRemover = ({ name, parameters}) => {
       </button>
     </>
   )
+
   const addComponent = e => {
-    containerComponents.push({ ...newComponent, key: key++ })
-    containerAdderRemover.push(newAdderRemover)
-    setComponentsListState([containerComponents, containerAdderRemover])
+    containerComponents = [...containerComponents,[{ ...newComponent, key: key++ }, newAdderRemover]]
+    setComponentsListState([containerComponents])
   }
+
   console.log(ComponentsListState)
   const removeComponent = e => {}
   return (
