@@ -29,8 +29,10 @@ export const App = props => {
     <div className='hola'>
       <Prueba text='prueba' />
       <AdderRemover name='prueba' parameters={PropsComponents.prueba} />
+
       <ListIATAItem />
       <AdderRemover name='listIataItem' parameters={PropsComponents.listIataItem} />
+
       <NavigationItem />
       <AdderRemover name='navigationItem' parameters={PropsComponents.navigationItem} />
     </div>
